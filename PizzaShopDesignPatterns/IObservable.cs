@@ -5,12 +5,8 @@ using System.Text;
 
 namespace PizzaShopDesignPatterns
 {
-    public interface IPizzaDecorator : IPizzaComponent
+    public interface IObservable
     {
-        IPizzaComponent Pizza
-        {
-            get;
-            set;
-        }
+        void AddObserver(IObserver observer);
     }
 }

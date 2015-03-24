@@ -42,11 +42,16 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ChilliDecorator.cs" />
+    <Compile Include="Imenu.cs" />
+    <Compile Include="IObservable.cs" />
+    <Compile Include="IObserve.cs" />
     <Compile Include="PepperoniDecorator.cs" />
     <Compile Include="PiizaFactoryOven.cs" />
     <Compile Include="PineAppleDecorator.cs" />
     <Compile Include="PizzaComponent.cs" />
     <Compile Include="PizzaDecorator.cs" />
+    <Compile Include="PizzaMan.cs" />
+    <Compile Include="PizzaToMenuAdapter.cs" />
     <Compile Include="PlainPizza.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

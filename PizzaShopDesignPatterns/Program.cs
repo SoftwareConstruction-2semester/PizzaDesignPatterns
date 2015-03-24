@@ -15,12 +15,16 @@ namespace PizzaShopDesignPatterns
             //ChilliDecorator chilliPepperoniPizza = new ChilliDecorator(pepperoniPizza);
             //Console.WriteLine(chilliPepperoniPizza);
             //Console.WriteLine(chilliPepperoniPizza.Price);
+            PizzaMan pizzaMan = new PizzaMan();
+            PizzaFactoryOven oven = new PizzaFactoryOven();
+            oven.AddObserver(pizzaMan);
 
-            PizzaComponent p = PizzaFactoryOven.GetChilliPepperoniPineapplePizza();
-            Console.WriteLine(p);
-            Console.WriteLine(p.Price);
+            IPizzaComponent pizza = oven.GetChilliPepperoniPineapplePizza();
+            
+            Console.WriteLine(pizza);
+            Console.WriteLine(pizza.Price);
 
-
+            Console.ReadLine();
         }
     }
 }

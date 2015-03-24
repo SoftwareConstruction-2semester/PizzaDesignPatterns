@@ -5,13 +5,23 @@ using System.Text;
 
 namespace PizzaShopDesignPatterns
 {
-    public class PlainPizza : PizzaComponent
+    public class PlainPizza : IPizzaComponent
     {
         private int _price;
 
         public override string ToString()
         {
             return "Pizza with Tomatoes and cheese";
+        }
+
+        public void AddObserver(IObserver observer)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddObserver()
+        {
+            throw new NotImplementedException();
         }
 
         public PlainPizza()

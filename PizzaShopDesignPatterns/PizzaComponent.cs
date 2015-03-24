@@ -5,7 +5,7 @@ using System.Text;
 
 namespace PizzaShopDesignPatterns
 {
-    public interface PizzaComponent
+    public interface IPizzaComponent
     {
         int Price { get; set; }
     }

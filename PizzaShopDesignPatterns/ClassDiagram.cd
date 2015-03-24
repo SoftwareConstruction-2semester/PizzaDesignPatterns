@@ -1,53 +1,70 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="PizzaShopDesignPatterns.PlainPizza">
-    <Position X="3.25" Y="2.5" Width="1.5" />
+    <Position X="3.25" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AgAAAAAAAQAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AgAAAAAAAQBAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>PlainPizza.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.19" />
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="PizzaShopDesignPatterns.ChilliDecorator">
-    <Position X="8.5" Y="3" Width="1.5" />
+    <Position X="7.75" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAQAAAAAEAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAQBAAAAEAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
       <FileName>ChilliDecorator.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="PizzaShopDesignPatterns.PepperoniDecorator">
-    <Position X="6.75" Y="3" Width="1.5" />
+    <Position X="6" Y="3.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAQAAAAAEAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAQBAAAAEAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
       <FileName>PepperoniDecorator.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="PizzaShopDesignPatterns.PizzaFactoryOven">
-    <Position X="11" Y="1.5" Width="1.5" />
+    <Position X="9.5" Y="0.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAIABAAAAAAAAAACAAEAAAAAAAABAAAAQgIAA=</HashCode>
       <FileName>PiizaFactoryOven.cs</FileName>
     </TypeIdentifier>
+    <Lollipop Position="0.2" />
   </Class>
   <Class Name="PizzaShopDesignPatterns.PineappleDecorator">
-    <Position X="10.25" Y="3" Width="1.5" />
+    <Position X="9.5" Y="2.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAQBAAAAEAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
       <FileName>PineAppleDecorator.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
   </Class>
-  <Interface Name="PizzaShopDesignPatterns.PizzaComponent">
-    <Position X="3.25" Y="0.75" Width="1.5" />
+  <Class Name="PizzaShopDesignPatterns.PizzaMan">
+    <Position X="11.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>PizzaMan.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PizzaShopDesignPatterns.PizzaToMenuAdapter">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAABAAAAAAEAAAAAQABAAAAgAgAAAAA=</HashCode>
+      <FileName>PizzaToMenuAdapter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Interface Name="PizzaShopDesignPatterns.IPizzaComponent">
+    <Position X="3.25" Y="1" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>PizzaComponent.cs</FileName>
     </TypeIdentifier>
   </Interface>
   <Interface Name="PizzaShopDesignPatterns.IPizzaDecorator">
-    <Position X="7.5" Y="1.5" Width="1.5" />
+    <Position X="6.75" Y="2.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAA=</HashCode>
       <FileName>PizzaDecorator.cs</FileName>
@@ -55,6 +72,27 @@
     <ShowAsAssociation>
       <Property Name="Pizza" />
     </ShowAsAssociation>
+  </Interface>
+  <Interface Name="PizzaShopDesignPatterns.IObserver">
+    <Position X="11.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>IObserve.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PizzaShopDesignPatterns.IObservable">
+    <Position X="11.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>IObservable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="PizzaShopDesignPatterns.Imenu">
+    <Position X="5.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAAAAAAAAAAAAAAAQAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Imenu.cs</FileName>
+    </TypeIdentifier>
   </Interface>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

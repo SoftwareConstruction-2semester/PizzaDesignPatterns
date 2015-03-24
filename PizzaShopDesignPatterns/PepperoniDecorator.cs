@@ -7,9 +7,9 @@ namespace PizzaShopDesignPatterns
 {
     public class PepperoniDecorator : IPizzaDecorator
     {
-        public PizzaComponent Pizza { get; set; }
+        public IPizzaComponent Pizza { get; set; }
 
-        public PepperoniDecorator(PizzaComponent pizza)
+        public PepperoniDecorator(IPizzaComponent pizza)
         {
             this.Pizza = pizza;
             Price = Pizza.Price + 5;
@@ -18,6 +18,16 @@ namespace PizzaShopDesignPatterns
         public override string ToString()
         {
             return Pizza.ToString() + " and Pepperoni";
+        }
+
+        public void AddObserver(IObserver observer)
+        {
+            throw new NotImplementedException();
+        }
+
+        public void AddObserver()
+        {
+            throw new NotImplementedException();
         }
 
         public int Price
